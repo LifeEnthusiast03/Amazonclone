@@ -1,39 +1,24 @@
-let cloths=[
-    {
-        Name:"T-shirt" ,
-        price:399
-    },
-    {
-        Name:"Pant" ,
-        price:399
-    },
-    {
-        Name:"Huddy" ,
-        price:399
-    },
-    {
-        Name:"Jogars" ,
-        price:399
-    },
-    {
-        Name:"Trousars" ,
-        price:399
-    },
-    {
-        Name:"Socks" ,
-        price:399
-    },
-    {
-        Name:"Swater" ,
-        price:399
-    },
-    {
-        Name:"Underware" ,
-        price:399
-    }
 
-]
-let ab=document.getElementsByClassName("procduct-imege")
-ab[0].style.backgroundImage="url(t-shirts.webp";
+
+function changeproductpage(){
+    const cloths=document.querySelectorAll(".cloths .procduct-imege");
+    cloths[0].style.backgroundImage='url("clo2.jpg")';
+
+}
+
+let page=document.querySelectorAll(".box-contain");
+
+page.forEach((pg)=>{
+    
+    pg.addEventListener("click",(evt)=>{
+            if(evt.target.id==='1'){
+                console.log("img");
+                
+                changeproductpage()
+            }
+        
+    })
+})
+
 
 
