@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    position: fixed;
+    position:fixed;
     top:0px;
     width: 100%;
     z-index: 1;
@@ -230,6 +230,8 @@ background-color: #e2e7e6  ;
 }
 footer{
     margin-top: 20px;
+    position: relative;
+    bottom: 0;
 }
 .foot-panel2{
     padding-top: 10px;
